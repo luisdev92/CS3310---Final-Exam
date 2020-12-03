@@ -78,8 +78,6 @@ Output: 5    which is the sequence [3, -2, 4]
 				break; 
 			}
 		}
-		 
 		 return isSubTree; 
 	}
-	
 }
