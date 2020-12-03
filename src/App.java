@@ -20,8 +20,8 @@ Output: 5    which is the sequence [3, -2, 4]
 		seq.generateAllSubSequences(arr);
 		seq.solve(arr);
 // --------------------------------------------------------------------------	
-//3. Given 2 very large binary trees T1 and T2. Create an algorithm to
-//   de-termine if T2 is a subtree of T1. Assume T1 is always much larger than T2.
+// 3. Given 2 very large binary trees T1 and T2. Create an algorithm to
+//   determine if T2 is a subtree of T1. Assume T1 is always much larger than T2.
 	
 		Tree<Integer> t1 = new BinarySearchTree<>(); 
 		Tree<Integer> t2 = new BinarySearchTree<>(); 
@@ -44,8 +44,9 @@ Output: 5    which is the sequence [3, -2, 4]
 		t2.insert(360);
 	
 		System.out.println("T2 is a subtree of T1 " + subTreeTest(t1, t2));
-		// --------------------------------------------------------------------------			
-		// Maximum Sub 
+// --------------------------------------------------------------------------			
+// 4.	Given an NxN matrix of positive and negative integers, 
+//		find the sub-matrix with the largest possible sum.
         int[][] matrix = { { 1, 1, 1, 1, 1 },  
                 { 2, 2, 2, 2, 2 },  
                 { 3, 8, 6, 7, 3 },  
@@ -56,6 +57,7 @@ Output: 5    which is the sequence [3, -2, 4]
 		LargestPossibleSumSubMatrix solve = new LargestPossibleSumSubMatrix(); 
 		
 		solve.findMaxMatrixSum(matrix, k);
+// --------------------------------------------------------------------------
 	}
 	
 	static public Boolean subTreeTest(Tree<Integer> t1, Tree<Integer> t2) {
